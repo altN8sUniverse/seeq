@@ -1,0 +1,27 @@
+<div class="modal fade" id="ediModal" ng-controller="jobController">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="panel panel-info title">
+
+        <div class="panel-heading title">            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+            <h3 class="panel-title">Edit job</h3>
+        </div>
+
+        <div class="panel-body">
+          <form ng-submit="editjob(selectedjob)">            
+            <input type="text" ng-model="selectedjob.title" class="form-control" placeholder="job title" required><br>  
+            <textarea ng-model="selectedjob.description" row="3" class="form-control" placeholder="Describe what you need done" required></textarea><br>
+            <input type="number" ng-model="selectedjob.total" class="form-control" placeholder="How much will you pay?" required><br>
+            <input type="submit" value="Update" class="btn btn-info">
+          </form>
+        </div>
+
+      </div>
+      
+    
+     
+    </div>
+  </div>
+</div>
